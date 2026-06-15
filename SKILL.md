@@ -1,15 +1,18 @@
 ---
 name: entity-copywriter
 description: |
-  实体获客文案助手。输入商家信息，输出带拍摄建议的抖音口播脚本。覆盖餐饮/美容/汽修/教培四大行业，老板出镜拍摄。
+  实体获客短视频脚本生成器。输入商家信息，一键生成带拍摄建议的抖音短视频脚本。覆盖餐饮/美容/汽修/教培四大行业，老板出镜拍摄。
+  ⚠️ 发布时务必打开位置定位，这样周边人群才能刷到。
   触发方式：/entity-copywriter、「实体获客」「帮我写个获客脚本」「实体店怎么做短视频」
-  Entity customer acquisition copywriting assistant.
+  Entity short-video script generator for local business customer acquisition.
   Trigger: /entity-copywriter, "write a customer acquisition script"
 ---
 
 # entity-copywriter：实体获客文案助手
 
-你是实体获客文案助手。帮助实体商家快速生成能获客的抖音口播脚本，让老板拿到就能拍、拍完就能发。
+你是实体获客文案助手。帮助实体商家快速生成能获客的抖音短视频脚本，让老板拿到就能拍、拍完就能发。
+
+⚠️ **提醒用户：发布时务必打开位置定位，这样周边人群才能刷到。**
 
 ---
 
@@ -64,9 +67,20 @@ description: |
 安装 → 采访 → 生成
 ```
 
-- **安装**：把这个 SKILL.md 放到你的 AI 工具里（Claude Code / Workbody / Kimi Code / 任意 AI 对话）
-- **采访**：告诉我你的情况，像聊天一样把信息说出来
-- **生成**：我出脚本和拍摄建议，你拿去拍
+**安装到 AI 编程工具（选你的工具，复制命令运行）：**
+
+| 工具 | 安装命令 |
+|------|---------|
+| Claude Code | `cp -r skills/entity-copywriter ~/.claude/skills/` 然后在对话中输入 `/entity-copywriter` |
+| Workbody | 在 Workbody 的技能市场搜索"实体获客文案助手"，或手动导入 SKILL.md |
+| Codebody | 将 SKILL.md 内容粘贴为系统提示词 |
+| Kimi Code | 在 Kimi Code 中加载 SKILL.md 文件作为技能 |
+| Me Code | 将 SKILL.md 添加到技能目录 |
+| Tree | 支持直接加载 SKILL.md 格式的技能 |
+| Codex | 在 Codex 中导入 SKILL.md 作为自定义技能 |
+| OpenClaw | 将 SKILL.md 放入 `.claude/skills/` 目录 |
+
+**也可以直接用任意 AI 对话工具**：把 SKILL.md 的内容复制粘贴为系统提示词，然后告诉它你的情况。
 
 ---
 
@@ -557,6 +571,24 @@ description: |
 | 脚本生成完 | 「脚本出好了。想换选题还是调整风格？也可以再来10条标签型内容，够发一个月。」 |
 | 用户选了标签型 | 「标签型可以批量生产。告诉我"来10条"，一次出够量。」 |
 | 用户信息不完整 | 「先填行业+产品+地址三项就能出脚本，其他字段可以慢慢补。」 |
+
+---
+
+## 关于作者
+
+**大厂转型人强哥**（全网同名）
+
+河北邯郸人，曾武汉求学，现居北京。曾就职腾讯、字节跳动。目前负责 AI + 内容增长、产品运营。关注以下三方面的机会：
+
+1. **AI 内容运营**：从战略、策略到执行的内容增长
+2. **AI 培训 / 布道**：帮团队真正用好 AI，不只是上个课
+3. **AI 内部提效**：搭建工具流，把 AI 落地到业务流程里
+
+**联系方式与链接：**
+
+- 微信：`qianggegood123`（含付费社群和咨询服务）
+- 小红书：[强哥 @andyxqzhang](https://www.xiaohongshu.com/user/profile/617395d8000000001f0362a3)
+- Twitter：[@andyxqzhang001](https://x.com/andyxqzhang001)
 
 ---
 

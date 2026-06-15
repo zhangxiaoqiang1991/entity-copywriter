@@ -1,6 +1,8 @@
-# entity-copywriter：实体获客文案助手
+# entity-copywriter：实体获客短视频脚本生成器
 
-输入商家信息，一键生成带拍摄建议的抖音口播脚本。覆盖餐饮/美容/汽修/教培四大行业，老板出镜拍摄。
+输入商家信息，一键生成带拍摄建议的抖音短视频脚本。覆盖餐饮/美容/汽修/教培四大行业，老板出镜拍摄。
+
+⚠️ **发布时务必打开位置定位，这样周边人群才能刷到。**
 
 ## 使用方式
 
@@ -8,9 +10,25 @@
 安装 → 采访 → 生成
 ```
 
-- **安装**：把 `SKILL.md` 放到你的 AI 工具里（支持 Claude Code / Workbody / Kimi Code / 任意 AI 对话）
-- **采访**：告诉我你的情况（在哪个城市、卖什么、有什么特点）
-- **生成**：我出 20 秒脚本 + 拍摄建议，你用剪映或开拍 APP 拍了就发
+### 安装到 AI 编程工具
+
+| 工具 | 安装方式 |
+|------|---------|
+| **Claude Code** | `cp -r skills/entity-copywriter ~/.claude/skills/` 然后输入 `/entity-copywriter` |
+| **Workbody** | 技能市场搜索"实体获客文案助手"，或手动导入 SKILL.md |
+| **Codebody** | 将 SKILL.md 内容粘贴为系统提示词 |
+| **Kimi Code** | 加载 SKILL.md 文件作为技能 |
+| **Me Code** | 将 SKILL.md 添加到技能目录 |
+| **Tree** | 支持直接加载 SKILL.md 格式的技能 |
+| **Codex** | 导入 SKILL.md 作为自定义技能 |
+| **OpenClaw** | 将 SKILL.md 放入 `.claude/skills/` 目录 |
+| **任意 AI 对话** | 直接把 SKILL.md 内容粘贴为系统提示词 |
+
+### 三步使用
+
+1. **安装** — 按上表选你的工具，装好 SKILL.md
+2. **采访** — 告诉我你的情况（在哪个城市、卖什么、有什么特点）
+3. **生成** — 我出 20 秒脚本 + 拍摄建议，你用剪映或开拍 APP 拍了就发
 
 ## 底层逻辑
 
@@ -49,23 +67,30 @@
 
 ## 快速开始
 
-### 在 Claude Code 中使用
+在 Claude Code 中：
 
 ```bash
 cp -r skills/entity-copywriter ~/.claude/skills/
-# 然后在对话中触发：
 /entity-copywriter
 ```
 
-### 在 Workbody / Kimi Code / 任意 AI 工具中使用
+其他 AI 编程工具直接把 `SKILL.md` 内容粘贴为系统提示词即可。
 
-直接把 `SKILL.md` 的内容粘贴为系统提示词，然后告诉 AI 你的情况即可。
+## 关于作者
+
+**大厂转型人强哥**（全网同名）
+
+河北邯郸人，曾武汉求学，现居北京。曾就职腾讯、字节跳动。目前负责 AI + 内容增长、产品运营。
+
+- 微信：`qianggegood123`（含付费社群和咨询服务）
+- 小红书：[强哥 @andyxqzhang](https://www.xiaohongshu.com/user/profile/617395d8000000001f0362a3)
+- Twitter：[@andyxqzhang001](https://x.com/andyxqzhang001)
 
 ## 文件结构
 
 ```
 entity-copywriter/
-  SKILL.md    ← 主文件（复制到任意 AI 工具即可用）
+  SKILL.md    ← 主文件
   README.md   ← 本文档
 ```
 
