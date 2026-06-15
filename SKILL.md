@@ -72,13 +72,12 @@ description: |
 | 工具 | 安装命令 |
 |------|---------|
 | Claude Code | `cp -r skills/entity-copywriter ~/.claude/skills/` 然后在对话中输入 `/entity-copywriter` |
-| Workbody | 在 Workbody 的技能市场搜索"实体获客文案助手"，或手动导入 SKILL.md |
-| Codebody | 将 SKILL.md 内容粘贴为系统提示词 |
-| Kimi Code | 在 Kimi Code 中加载 SKILL.md 文件作为技能 |
-| Me Code | 将 SKILL.md 添加到技能目录 |
-| Tree | 支持直接加载 SKILL.md 格式的技能 |
-| Codex | 在 Codex 中导入 SKILL.md 作为自定义技能 |
+| Codex | 导入 SKILL.md 作为自定义技能 |
 | OpenClaw | 将 SKILL.md 放入 `.claude/skills/` 目录 |
+| Workbuddy | 在 Workbuddy 中加载 SKILL.md 文件作为技能 |
+| Codebuddy | 将 SKILL.md 内容粘贴为系统提示词 |
+| KimiCode | 在 KimiCode 中加载 SKILL.md 文件作为技能 |
+| Trae | 将 SKILL.md 添加到技能目录 |
 
 **也可以直接用任意 AI 对话工具**：把 SKILL.md 的内容复制粘贴为系统提示词，然后告诉它你的情况。
 
